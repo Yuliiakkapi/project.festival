@@ -1,32 +1,179 @@
-.stage-container {
+/* Importing fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #1f1f1f;
   padding: 20px;
   text-align: center;
 }
 
-h2 {
-  font-size: 24px;
+.header h1 {
+  margin: 0;
+  color: #d0ff00; /* Neon green accent color */
+}
+
+.header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.header nav ul li a {
+  color: #d0ff00;
+  text-decoration: none;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #d0ff00;
+  color: #121212;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1em;
+  border-radius: 50px; /* Bubbled button style */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #d0ff00;
+}
+
+.footer {
+  background-color: #1f1f1f;
+  text-align: center;
+  padding: 10px;
+}
+
+.stage-container {
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.stage-container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
   margin-bottom: 20px;
 }
 
 .event-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 40px;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
 }
 
 .event-card {
-  background-color: #ebe4ff;
-  color: white;
-  padding: 12px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  text-align: center;
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-h3 {
-  font-size: 18px;
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.event-card h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  color: #d0ff00; /* Neon green accent color */
   margin: 0;
-  color: #333;
+}
+
+.event-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.event-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Detail Page Styling */
+.detail-container {
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.detail-container img {
+  width: 40%;
+  height: auto;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.detail-container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #d0ff00; /* Neon green accent color */
+}
+
+.detail-container p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  background-color: #d0ff00;
+  color: #121212;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 50px; /* Bubbled button style */
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #d0ff00;
 }
