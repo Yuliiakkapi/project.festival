@@ -118,6 +118,7 @@ body {
 .event-card h4 {
   font-family: "Poppins", sans-serif;
   font-size: 1.5em;
+  font-weight: 300;
   color: #d0ff00; /* Neon green accent color */
   margin: 0;
 }
@@ -176,4 +177,26 @@ body {
 
 .back-button:hover {
   background-color: #d0ff00;
+}
+
+.search-filter-container {
+  margin-bottom: 20px;
+}
+
+.search-filter-container p {
+  margin: 10px 0;
+}
+
+.search-filter-container input,
+.search-filter-container select {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.search-filter-container input::placeholder {
+  color: #888;
 }

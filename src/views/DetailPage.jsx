@@ -22,6 +22,18 @@ export default function DetailPage() {
       image:
         "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evNZY5NHq-default.jpg",
     },
+    {
+      uid: "4",
+      time: "Meet Billie Eilish at 3pm",
+      description: "Perfect mix of pop and nice melody...",
+      image: "https://i.scdn.co/image/ab67616d00001e022a038d3bf875d23e4aeaa84e",
+    },
+    {
+      uid: "5",
+      time: "Meet Beyonce at 8pm",
+      description: "Enjoy yourself!",
+      image: "https://i.scdn.co/image/ab67616d0000b273632e4eafb2ffba59a2ae4500",
+    },
   ];
 
   const { eventId } = useParams(); // Get event ID from the URL
